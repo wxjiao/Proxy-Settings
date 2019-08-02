@@ -10,7 +10,7 @@ pip install package --proxy=http://your_proxy:your_port
 ```
 
 ## Conda
-On Windows:
+On Windows in `cmd`:
 ```ruby
 set http_proxy=http://your_proxy:your_port
 set https_proxy=https://your_proxy:your_port
@@ -25,6 +25,7 @@ conda install package
 ```
 
 ## Python scripts
+In your python scripts:
 ```ruby
 import os
 
@@ -34,5 +35,5 @@ os.environ['HTTP_PROXY'] = proxy
 os.environ['https_proxy'] = proxy
 os.environ['HTTPS_PROXY'] = proxy
 
-*your code*
+# your code
 ```
