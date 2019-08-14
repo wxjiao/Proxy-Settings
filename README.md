@@ -3,12 +3,6 @@ Notes of proxy settings for conda, pip, python scripts.
 
 ---------------------
 
-## Pip
-Install or upgrade packages with `pip`:
-```ruby
-pip install package --proxy=http://your_proxy:your_port
-```
-
 ## Conda
 On Windows in `cmd`:
 ```ruby
@@ -24,8 +18,18 @@ export https_proxy=https://your_proxy:your_port
 conda install package
 ```
 
+## Pip
+For Pip, you can set up the global proxy as Conda above.
+
+Or you can designate the proxy argument in `pip` as:
+```ruby
+pip install package --proxy=http://your_proxy:your_port
+```
+
 ## Python scripts
-In your python scripts:
+For Python, you can also set up the global proxy as Conda above.
+
+Or just set up in your python scripts as:
 ```ruby
 import os
 
